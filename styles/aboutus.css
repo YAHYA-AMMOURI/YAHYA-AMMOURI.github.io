@@ -1,0 +1,476 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+    position: fixed; /* Fix the header to the top */
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensure the header is above other content */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+}
+
+header nav ul li.active a {
+    border-bottom: 2px solid #000000;
+}
+
+.page-header {
+    background-color: #0057A8;
+    color: #ffffff;
+    padding: 100px 0 50px; /* Add top padding to account for the fixed header */
+    text-align: center;
+}
+
+.page-header h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.page-header p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.history, .values, .team {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.history h2, .values h2, .team h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.history .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.history .text {
+    text-align: left;
+    width: 45%;
+}
+
+.values {
+    background-color: #f9f9f9;
+}
+
+.values .cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.values .card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 240px;
+    text-align: center;
+}
+
+.values .card .icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+.values .card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.values .card p {
+    font-size: 14px;
+    color: #000000;
+}
+
+.team .members {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.team .member {
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 240px;
+    text-align: center;
+}
+
+.team .member .photo {
+    width: 100px;
+    height: 100px;
+    background-color: #dddddd;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+.team .member h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.team .member p {
+    font-size: 14px;
+    color: #555555;
+}
+
+.call-to-action {
+    background-color: #0057A8;
+    color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.call-to-action h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.call-to-action button {
+    background-color: #FFD700;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 50px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-column {
+    width: 30%;
+}
+
+footer .footer-column h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer .footer-column p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #aaaaaa;
+    margin: 5px 0;
+}
+
+footer .footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .footer-column ul li {
+    margin: 5px 0;
+}
+
+footer .footer-column ul li a {
+    text-decoration: none;
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+footer .social-icons {
+    display: flex;
+    margin-top: 20px;
+}
+
+footer .social-icons .icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+footer .copyright {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: #777777;
+    margin-top: 20px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+.nav-item {
+    cursor: pointer;
+    transition: fill 0.3s ease;
+}
+.nav-item:hover {
+    fill: #0057A8;
+}
+.nav-underline {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform-origin: center;
+    opacity: 0;
+}
+.nav-item-container:hover .nav-underline {
+    opacity: 1;
+}
+.active-nav .nav-item {
+    fill: #0057A8;
+    font-weight: bold;
+}
+.active-nav .nav-underline {
+    opacity: 1; /* Make underline visible for active nav item */
+}
+.logo {
+    cursor: pointer;
+}
+
+/* Animation styles */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInFromLeft {
+    from { transform: translateX(-50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInFromRight {
+    from { transform: translateX(50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInFromBottom {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes scaleUp {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Apply animations to elements */
+.page-header {
+    animation: fadeIn 1.2s ease-out;
+}
+
+.history .text {
+    animation: slideInFromLeft 1s ease-out 0.3s both;
+}
+
+.history .image {
+    animation: slideInFromRight 1s ease-out 0.5s both;
+    transition: transform 0.3s ease;
+}
+
+.history .image:hover {
+    transform: scale(1.05);
+}
+
+.values h2 {
+    animation: fadeIn 1s ease-out 0.3s both;
+}
+
+.values .card {
+    animation: slideInFromBottom 0.8s ease-out both;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.values .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.values .card:nth-child(1) {
+    animation-delay: 0.4s;
+}
+
+.values .card:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.values .card:nth-child(3) {
+    animation-delay: 0.8s;
+}
+
+.values .icon {
+    animation: scaleUp 0.5s ease-out 1s both;
+    transition: transform 0.3s ease;
+}
+
+.values .icon:hover {
+    animation: pulse 2s infinite;
+}
+
+.team h2 {
+    animation: fadeIn 1s ease-out 0.3s both;
+}
+
+.team .member {
+    animation: slideInFromBottom 0.8s ease-out both;
+    transition: transform 0.3s ease;
+}
+
+.team .member:hover {
+    transform: translateY(-10px);
+}
+
+.team .member:nth-child(1) {
+    animation-delay: 0.4s;
+}
+
+.team .member:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.team .member:nth-child(3) {
+    animation-delay: 0.8s;
+}
+
+.call-to-action {
+    animation: fadeIn 1.5s ease-out 0.5s both;
+}
+
+.call-to-action button {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.call-to-action button:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    animation: fadeIn 1s ease-out;
+}
+
+.social-icons .icon {
+    animation: float 3s ease-in-out infinite;
+    transition: transform 0.3s ease;
+}
+
+.social-icons .icon:hover {
+    transform: scale(1.2);
+}
+
+/* Animated underline effect for links */
+footer a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+}
+
+footer a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: #0057A8;
+    transition: width 0.3s ease;
+}
+
+footer a:hover::after {
+    width: 100%;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Reveal animation for sections */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Rotating effect for logo */
+.logo-animation {
+    transition: transform 0.5s ease;
+}
+
+.logo-animation:hover {
+    transform: rotate(5deg);
+}
