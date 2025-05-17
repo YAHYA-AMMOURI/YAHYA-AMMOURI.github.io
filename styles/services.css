@@ -1,0 +1,354 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+}
+
+header nav ul li.active a {
+    border-bottom: 2px solid #000000;
+}
+
+.page-header {
+    background-color: #0057A8;
+    color: #ffffff;
+    padding: 100px 0 50px;
+    text-align: center;
+}
+
+.page-header h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.page-header p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.printing-services, .photography-services {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.printing-services h2, .photography-services h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.service-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.service-card .icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+.service-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.service-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service-card ul li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.cta {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.cta h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.cta button {
+    background-color: #FFD700;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    cursor: pointer;
+}
+
+footer {
+    background-color: black;
+    color: #ffffff;
+    padding: 50px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-column {
+    width: 30%;
+}
+
+footer .footer-column h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer .footer-column p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #aaaaaa;
+    margin: 5px 0;
+}
+
+footer .footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .footer-column ul li {
+    margin: 5px 0;
+}
+
+footer .footer-column ul li a {
+    text-decoration: none;
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+footer .social-icons {
+    display: flex;
+    margin-top: 20px;
+}
+
+footer .social-icons .icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+footer .copyright {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: #777777;
+    margin-top: 20px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.nav-item {
+    cursor: pointer;
+    transition: fill 0.3s ease;
+}
+.nav-item:hover {
+    fill: #0057A8;
+}
+.nav-underline {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform-origin: center;
+    opacity: 0;
+}
+.nav-item-container:hover .nav-underline {
+    opacity: 1;
+}
+.active-nav .nav-item {
+    fill: #0057A8;
+    font-weight: bold;
+}
+.active-nav .nav-underline {
+    opacity: 0;
+}
+.clicked .nav-underline {
+    opacity: 1 !important;
+}
+.logo {
+    cursor: pointer;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.page-header, .cta {
+    text-align: center;
+    padding: 50px 0;
+}
+.page-header h2, .cta h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.page-header p, .cta button {
+    font-size: 1.2em;
+}
+.cta button {
+    padding: 10px 20px;
+    background-color: #0057A8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cta button:hover {
+    background-color: #004080;
+}
+.service-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+.service-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(33.333% - 20px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.service-card:hover {
+    transform: translateY(-10px);
+}
+.service-card .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.service-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.service-card ul {
+    list-style: none;
+    padding: 0;
+}
+.service-card ul li {
+    margin-bottom: 5px;
+}
+footer {
+    background: #000000;
+    color: white;
+    padding: 20px 0;
+}
+.footer-column {
+    margin-bottom: 20px;
+}
+.footer-column h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.footer-column p, .footer-column ul {
+    font-size: 1em;
+}
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+}
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.social-icons .icon img {
+    width: 30px;
+    height: 30px;
+}
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+}

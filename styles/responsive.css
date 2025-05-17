@@ -1,0 +1,271 @@
+
+/* Add these rules at the top of responsive.css */
+.mobile-nav-toggle {
+  display: none; /* Hidden by default */
+}
+
+.mobile-nav {
+  display: none; /* Hidden by default */
+}
+
+/* Keep existing tablet/mobile styles INSIDE media query */
+@media (max-width: 768px) {
+  .mobile-nav-toggle {
+    display: block; /* Only show on mobile */
+  }
+
+  .mobile-nav {
+    display: flex; /* Only show on mobile */
+    /* Keep existing mobile-nav styles */
+  }
+
+  /* Hide desktop navigation on mobile */
+  header svg text {
+    display: none;
+  }
+}
+/* Responsive CSS Framework for KN Graphic Menara
+ * This framework addresses responsive design issues across all pages
+ */
+
+/* Base Responsive Rules */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Container Responsiveness */
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* SVG Header Responsiveness */
+  header svg, svg {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+  
+  /* Hide SVG navigation on small screens */
+  @media (max-width: 768px) {
+    header svg text, svg text {
+      display: none;
+    }
+    
+    /* Add a mobile navigation toggle button */
+    .mobile-nav-toggle {
+      display: block;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+      background: #0057A8;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      cursor: pointer;
+    }
+    
+    /* Mobile navigation menu */
+    .mobile-nav {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      z-index: 999;
+      transform: translateY(-100%);
+      transition: transform 0.3s ease;
+    }
+    
+    .mobile-nav.active {
+      transform: translateY(0);
+    }
+    
+    .mobile-nav a {
+      padding: 15px 20px;
+      color: #333;
+      text-decoration: none;
+      border-bottom: 1px solid #eee;
+      font-family: 'Open Sans', sans-serif;
+      text-align: center;
+    }
+    
+    .mobile-nav a.active {
+      color: #0057A8;
+      font-weight: bold;
+    }
+  }
+  
+  /* Responsive Hero Section */
+  .hero {
+    position: relative;
+    height: auto;
+    min-height: 400px;
+  }
+  
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Responsive Service Cards */
+  .service-cards, .service-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .service-card {
+    flex: 1 1 300px;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive Gallery Grid */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+  }
+  
+  .gallery-item {
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%; /* Maintain aspect ratio */
+    position: relative;
+  }
+  
+  /* About Us Section Responsiveness */
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .about-text {
+    flex: 1 1 300px;
+  }
+  
+  .about-image {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Responsive Team Section */
+  .members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .member {
+    flex: 1 1 250px;
+    max-width: 100%;
+  }
+  
+  /* Responsive Footer */
+  footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .footer-column {
+    flex: 1 1 250px;
+  }
+  
+  /* Contact Form Responsiveness */
+  .contact-form .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .form-container, .contact-info {
+    flex: 1 1 400px;
+  }
+  
+  /* Typography Responsiveness */
+  h1 { font-size: clamp(2rem, 5vw, 3rem); }
+  h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); }
+  h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
+  p { font-size: clamp(1rem, 2vw, 1.1rem); }
+  
+  /* Media Queries for Different Screen Sizes */
+  /* Small Devices (phones) */
+  @media (max-width: 576px) {
+    .hero-content h2 {
+      font-size: 1.8rem;
+    }
+    
+    .hero-content p {
+      font-size: 1rem;
+    }
+    
+    .page-header h2 {
+      font-size: 1.8rem;
+    }
+    
+    section {
+      padding: 40px 0;
+    }
+    
+    .service-card, .member, .footer-column {
+      flex-basis: 100%;
+    }
+  }
+  
+  /* Medium Devices (tablets) */
+  @media (min-width: 577px) and (max-width: 768px) {
+    .gallery-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    section {
+      padding: 50px 0;
+    }
+  }
+  
+  /* Large Devices (desktops) */
+  @media (min-width: 769px) and (max-width: 992px) {
+    .gallery-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Extra Large Devices */
+  @media (min-width: 993px) {
+    .gallery-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+  }
+  
